@@ -1,9 +1,10 @@
 import './App.css';
+import SongOverview from "./Components/SongOverview"
 
 function App() {
   return (
     <div className="App">
-      <h1>Hello world!</h1>
+      <SongOverview />
     </div>
   );
 }
