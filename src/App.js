@@ -11,7 +11,7 @@ function App() {
       <Navbar />
       <Switch>
         <Route path="/" component={SongOverview} exact />
-        <Route path="/AboutUs" component={AboutUs} />
+        <Route path="/AboutUs.js" component={AboutUs} />
       </Switch>
       </div>
     </BrowserRouter>

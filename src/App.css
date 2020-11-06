@@ -36,3 +36,8 @@
     transform: rotate(360deg);
   }
 }
+
+.songItem{
+  display: inline-flex;
+  margin: 2px;
+}
