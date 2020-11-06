@@ -2,7 +2,6 @@ import React from "react"
 import SongItem from "./SongItem"
 
 function SongList(props) {
-    console.log(props)
     const handleDeleteClick = props.handleClick
     const songList = props.songs
     const songsseperate = songList.map(element => <SongItem songs={element} 

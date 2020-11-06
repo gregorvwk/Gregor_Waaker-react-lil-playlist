@@ -10,7 +10,7 @@ function App() {
       <div className="App">
       <Navbar />
       <Switch>
-        <Route path="/" component={SongOverview} exect />
+        <Route path="/" component={SongOverview} exact />
         <Route path="/AboutUs" component={AboutUs} />
       </Switch>
       </div>

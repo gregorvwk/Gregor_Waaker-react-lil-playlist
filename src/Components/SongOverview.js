@@ -36,12 +36,14 @@ class SongOverview extends Component {
         <div>
             <SongForm addSong={this.addSong} />
                 <table >
+                    <tbody>
                     <tr className="song-header">  
                         <th className="song-row__item">Song</th>
                         <th className="song-row__item">Artist</th>
                         <th className="song-row__item">Genre</th>
                         <th className="song-row__item">Rating</th>
                     </tr>
+                    </tbody>
                 </table>
             <SongList songs={this.state.songsList} handleClick={this.handleDelete}/>
         </div>

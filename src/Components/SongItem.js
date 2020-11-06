@@ -1,7 +1,6 @@
 import React from "react"
 
 function SongItem(props){
-    console.log(props)
     return(
             <li
                 className="SongItem"
