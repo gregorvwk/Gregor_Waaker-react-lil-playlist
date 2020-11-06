@@ -9,7 +9,7 @@ class SongOverview extends Component {
       this.state = 
       {
         songsList: [
-            {songName: "asdasd", songArtist: "sfghdgfh", songGenre: "Rock", songRating: "3", songId: 1}
+            {songName: "This will rock you", songArtist: "The cool guys", songGenre: "Rock", songRating: "5", songId: 1}
         ],
         itemId: 2
       }
@@ -35,14 +35,6 @@ class SongOverview extends Component {
       return (
         <div>
             <SongForm addSong={this.addSong} />
-                <table >
-                    <tr className="song-header">  
-                        <th className="song-row__item">Song</th>
-                        <th className="song-row__item">Artist</th>
-                        <th className="song-row__item">Genre</th>
-                        <th className="song-row__item">Rating</th>
-                    </tr>
-                </table>
             <SongList songs={this.state.songsList} handleClick={this.handleDelete}/>
         </div>
       );
