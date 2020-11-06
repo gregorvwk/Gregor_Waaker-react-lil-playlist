@@ -1,11 +1,20 @@
 import './App.css';
 import SongOverview from "./Components/SongOverview"
+import AboutUs from "./Components/AboutUs"
+import Navbar from "./Components/Navbar"
+import { BrowserRouter, Route, Switch } from "react-router-dom"
 
 function App() {
   return (
-    <div className="App">
-      <SongOverview />
-    </div>
+    <BrowserRouter>
+      <div className="App">
+      <Navbar />
+      <Switch>
+        <Route path="/" component={SongOverview} exect />
+        <Route path="/AboutUs" component={AboutUs} />
+      </Switch>
+      </div>
+    </BrowserRouter>
   );
 }
 
